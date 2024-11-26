@@ -6,6 +6,9 @@ public class AdapterValidadorEmailClasse implements ValidadorEmailProtocolo{
 
     @Override
     public boolean isEmail(String valor) {
+        if (valor == null || valor.isEmpty()) {
+            return false;
+        }
         return EmailValidator.getInstance().isValid(valor);
     }
 }

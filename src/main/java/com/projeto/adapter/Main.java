@@ -18,8 +18,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String emailValido = "luizomf@gmail.com";
-        String emailInvalido = "luizomf@";
+        String emailValido = "turma@gmail.com";
+        String emailInvalido = "turma@";
 
         // Testa um email válido
         System.out.println("Testando email válido:");
