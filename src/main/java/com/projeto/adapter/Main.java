@@ -1,7 +1,4 @@
-import com.projeto.adapter.AdapterValidadorEmailClasse;
-import com.projeto.adapter.AdapterValidadorEmailFuncao;
-import com.projeto.adapter.ValidadorEmailFuncaoProtocolo;
-import com.projeto.adapter.ValidadorEmailProtocolo;
+package com.projeto.adapter;
 
 public class Main {
     public static void validarEmailClasse(ValidadorEmailProtocolo validadorEmail, String email) {
