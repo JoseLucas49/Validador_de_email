@@ -21,16 +21,21 @@ public class Main {
         String emailValido = "turma@gmail.com";
         String emailInvalido = "turma@";
 
-        // Testa um email válido
-        System.out.println("Testando email válido:");
-        validarEmailClasse(new AdapterValidadorEmailClasse(), emailValido);
-        validarEmailFuncao(AdapterValidadorEmailFuncao.INSTANCIA, emailValido);
+        try {
+            // Testa um email válido
+            System.out.println("Testando email válido:");
+            validarEmailClasse(new AdapterValidadorEmailClasse(), emailValido);
+            validarEmailFuncao(AdapterValidadorEmailFuncao.INSTANCIA, emailValido);
 
-        System.out.println();
+            System.out.println();
 
-        // Testa email inválido
-        System.out.println("Testando email inválido:");
-        validarEmailClasse(new AdapterValidadorEmailClasse(), emailInvalido);
-        validarEmailFuncao(AdapterValidadorEmailFuncao.INSTANCIA, emailInvalido);
+            // Testa email inválido
+            System.out.println("Testando email inválido:");
+            validarEmailClasse(new AdapterValidadorEmailClasse(), emailInvalido);
+            validarEmailFuncao(AdapterValidadorEmailFuncao.INSTANCIA, emailInvalido);
+        } catch (Exception e) {
+            System.err.println("Ocorreu um erro ao validar o email: "+ e.getMessage());
+            e.printStackTrace();  // Exibe a pilha de erros para facilitar a depuração
+        }
     }
 }
