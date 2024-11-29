@@ -35,7 +35,6 @@ public class Main {
             validarEmailFuncao(AdapterValidadorEmailFuncao.INSTANCIA, emailInvalido);
         } catch (Exception e) {
             System.err.println("Ocorreu um erro ao validar o email: "+ e.getMessage());
-            e.printStackTrace();  // Exibe a pilha de erros para facilitar a depuração
         }
     }
 }
